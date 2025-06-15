@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="CSS/RocketSignUp.css" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a id="navbar_logo" href="index.html">R</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a class="navbar_links" href="RocketStory.html">OUR STORY</a>
+                </li>
+                <li class="navbar_item">
+                    <a class="navbar_links" href="RocketFAQ.html">FAQ</a>
+                </li>
+                <li class="navbar_btn">
+                    <a class="button" href="RocketSignUp.html">SIGN UP</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </nav>
+
+    <div class="main">
+        <div class="main_container">
+            <div class="main_content">
+
+                <h1>Before you join Team Rocket, we'd like to ask you some questions</h1>
+                <h2>1. What are your goals in life?</h2>
+                <textarea id="goals" rows="3" cols="60"></textarea>
+
+                <h2>2. What position(s) are you interested in? Click all that apply.</h2>
+                <input type="checkbox" id="catcher" />
+                <label for="catcher">Catcher</label>
+
+                <input type="checkbox" id="battler" />
+                <label for="battler">Battler</label>
+
+                <input type="checkbox" id="stealer" />
+                <label for="stealer">Stealer</label>
+
+                <input type="checkbox" id="executer" />
+                <label for="executer">Executer</label>
+
+                <h2>3. Are you aware everyone that joins Team Rocket starts as a Grunt?</h2>
+                <input type="radio" id="yes" name="yesOrNo" />
+                <label for="yes">Yes</label>
+
+
+                <input type="radio" id="no" name="yesOrNo" />
+                <label for="no">No</label>
+                <h4 class="warning">Please be aware that all  members do start as grunts. If this is a concern for you, we unfortunately cannot accept your application.</h4>
+                <h3>Here, you can fill out some other information about yourself</h3>
+                <div class="personal">
+
+                    <label for="first">First Name</label><br />
+                    <input type="text" id="first" placeholder="First Name" class="contact" /><br />
+
+                    <label for="last">Last Name</label><br />
+                    <input type="text" id="last" placeholder="Last Name" class="contact" /><br />
+
+                    <label for="mail">Email Address</label><br />
+                    <input type="email" id="mail" placeholder="Email Address" /><br />
+
+                    <label for="phone">Phone Number</label><br />
+                    <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><br />
+
+
+                    <input type="submit" value="Complete Application" id="submit" />
+                </div>
+            </div>
+    </div>
+
+        <script src="JS/RocketSignUp.js"></script>
+    </body>
+</html>
